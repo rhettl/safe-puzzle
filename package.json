@@ -1,0 +1,26 @@
+{
+  "name": "safe-puzzle",
+  "version": "0.1.0",
+  "description": "Puzzle for cracking a safe code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhettl/safe-puzzle.git"
+  },
+  "keywords": [
+    "puzzle",
+    "game"
+  ],
+  "author": "Rhett Lowe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhettl/safe-puzzle/issues"
+  },
+  "homepage": "https://github.com/rhettl/safe-puzzle#readme",
+  "dependencies": {
+    "extend": "^3.0.0"
+  }
+}
