@@ -28,8 +28,9 @@ var Safe = function (opts) {
     if (typeof newCombo !== 'string' || newCombo.length !== this.options.length) {
       throw new Error(`New combo must be length ${this.options.length}. Given: ${newCombo}`);
     }
-    combo    = newCombo;
-    unlocked = false;
+    this.tries = 0;
+    combo      = newCombo;
+    unlocked   = false;
   };
   this.test  = function (test) {
     if (unlocked) {
@@ -48,10 +49,14 @@ var Safe = function (opts) {
 
     }
 
-    return unlocked;
+    return this.isUnlocked();
   };
   this.try   = this.test;
   this.check = this.test;
+
+  this.isUnlocked = function () {
+    return unlocked;
+  };
 
   // Init
   this.randomize();
