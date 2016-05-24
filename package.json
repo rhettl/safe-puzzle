@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
-    "eslint": "eslint -c ./.eslintrc.json ./*.js ./test/**/*.js"
+    "eslint": "eslint -c ./.eslintrc.json ./*.js ./test/**/*.js",
+    "nsp": "nsp check",
+    "prepublish": "npm run eslint && npm run nsp"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.2"
+    "mocha": "^2.5.2",
+    "nsp": "^2.4.0"
   }
 }
