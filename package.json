@@ -1,6 +1,6 @@
 {
   "name": "safe-puzzle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Puzzle for cracking a safe code",
   "main": "index.js",
   "scripts": {
