@@ -65,7 +65,7 @@ var Safe = function (opts) {
 Safe.prototype.randomize = function () {
   var combo = '';
   for (let i = 0, l = this.options.length; i < l; i++) {
-    combo += ( parseInt(Math.random() * 10) - 1);
+    combo += ( parseInt(Math.random() * 10) );
   }
   this.set(combo);
 };
