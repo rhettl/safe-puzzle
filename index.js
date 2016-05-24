@@ -6,7 +6,7 @@
 var extend     = require('extend');
 var defOptions = {
   length:   4,
-  maxTries: 0,
+  maxTries: 0
 };
 
 var Safe = function (opts) {
@@ -91,6 +91,3 @@ var MaxTriesError = function (message) {
 module.exports               = Safe;
 module.exports.UnlockedError = UnlockedError;
 module.exports.MaxTriesError = MaxTriesError;
-
-
-var s = new Safe();
